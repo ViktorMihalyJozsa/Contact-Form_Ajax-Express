@@ -1,0 +1,150 @@
+/*  ========================================================================  *\
+    G E N E R A L  -  S T Y L E S
+\*  ========================================================================  */
+
+/*  ========================================================================  *\
+    H T M L  -  B O D Y  -  S T Y L E S
+\*  ========================================================================  */
+
+* {
+    box-sizing:           border-box;
+    user-select:          none;
+}
+
+html, body {
+    width:                100%;
+    height:               100%;
+    margin:               0 auto;
+    padding:              0 auto;
+
+    font-family:          "Dancing Script", cursive;
+    font-optical-sizing:  auto;
+    font-weight:          weight;
+    font-style:           normal;
+    color:                darkred;
+}
+
+body {
+    display:               flex;
+    flex-direction:        column;
+    justify-content:       center;
+    align-items:           center;
+
+    background-image:       url("images/background.webp");
+    background-size:        cover;
+    background-repeat:      no-repeat;
+    background-position:    top;
+    background-attachment:  fixed;
+    background-color:       none;
+}
+
+
+/*  ========================================================================  *\
+    C O N T A I N E R  &  F O R M  -  S T Y L E S
+\*  ========================================================================  */
+
+.container, form {
+    width:          30vw;
+    max-width:      600px;
+    height:         auto;
+    margin-top:     2vh;
+    padding:        2vh 3vh 4vh 3vh;
+
+    background:     lightgoldenrodyellow;
+    border:         1px solid darkgray;
+    border-radius:  2vh;
+    box-shadow:     0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {text-align: center;}
+form {position: relative; padding-bottom: 10vh; text-align: left;}
+
+@media screen and (max-width: 600px) {.container, form {width: 80vw;}}
+
+
+/*  ========================================================================  *\
+    H E A D E R  -  S T Y L E S
+\*  ========================================================================  */
+
+h2 {
+    font-size:       clamp(1.5em, 2.4vw, 2.4em);
+    font-weight:     bold;
+    letter-spacing:  clamp(0.15em, 0.24vw, 0.24em);
+    text-align:      center;
+    text-shadow:     0.1em 0.1em 0.3em rgba(0, 0, 0, 0.1);
+}
+
+
+/*  ========================================================================  *\
+    F O R M  -  S T Y L E S
+\*  ========================================================================  */
+
+label {
+    display:         block;
+
+    margin-top:      3vh;
+    padding:         0vh 0vh 0vh 1vh;
+
+    font-size:       clamp(1.2em, 1.5vw, 1.5em);
+    font-weight:     bold;
+    letter-spacing:  clamp(0.12em, 0.15vw, 0.15em);
+}
+
+input {
+    width:   100%;
+    height:  auto;
+}
+
+textarea {
+    width:   100%;
+    height:  12vh;
+}
+
+input, textarea {
+    margin-top:     0.5vh;
+    padding:        1vh 1vh 1vh 2vh;
+    border:         1px solid #ccc;
+    border-radius:  1vh;
+}
+
+button {
+    cursor:            pointer;
+
+    position:          absolute;
+    right:             3vh;
+    bottom:            3vh;
+
+    width:             auto;
+    height:            auto;
+    margin-top:        2vh;
+    padding:           1vh 3vh 1vh 2vh;
+
+    font-family:       "Dancing Script", cursive;
+    font-size:         clamp(1.2em, 1.5vw, 1.5em);
+    font-weight:       bold;
+    letter-spacing:    clamp(0.12em, 0.15vw, 0.15em);
+    color:             white;
+
+    background-color:  #28a745;
+    border:            2px solid #0e411a;
+    border-radius:     3vh 0vh 6vh 3vh;
+    box-shadow:        0px 0px 5px rgba(0, 0, 0, 0.1);
+
+    transition:        background-color 0.8s ease;
+}
+
+    button:hover {
+        background-color:  yellowgreen;
+        color:             rgba(0, 0, 0, 0.5);
+    }
+
+
+/*  ========================================================================  *\
+    S T A T U S  -  S T Y L E S
+\*  ========================================================================  */
+
+#status {
+    text-align:  center;
+    width:       100%;
+    height:      auto;
+}
